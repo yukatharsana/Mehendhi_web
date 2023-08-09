@@ -1,0 +1,364 @@
+:root {
+    --black: black;
+    --light-black: #292929;
+    --white: #ffffff;
+    --orange: #6C2400;
+    --lite-orange: #d4632b;
+    --new: #ce6531;
+    --normal-orange: #ee9569;
+    --gray: #b9b6b6;
+    --hoverBorder:2.5px ridge #bd470d;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all ease-in 0.2s;
+    scroll-behavior: smooth;
+}
+*::-webkit-scrollbar{
+    display: none;
+}
+
+
+.card-wrapper {
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgb(114, 95, 95)1b1;
+    padding: 10px;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background: #f7f7f7;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+/*Home page start*/
+.Container h2 {
+    color: #bd470d;
+    font-size: 55px;
+    font-weight: 600;
+}
+
+.home-wrapper-1 {
+    background-color: #e6e6e6;
+}
+
+.home-wrapper-1 h6 {
+    font-weight: 700;
+    color: var(--orange);
+    font-size: 1.2rem;
+
+}
+
+.service {
+    background-color: #b5b5b577;
+}
+
+.service-img {
+    width: 20% !important;
+}
+
+.homebanner {
+    width: 400px;
+    height: 100px;
+}
+
+.home-wrapper-1 .home-btn {
+    padding: 30px 15px;
+
+}
+
+/*home button*/
+.btn-home-henna {
+    background-color: #c75821;
+    color: #fff;
+}
+
+.btn-home-henna:hover {
+    background-color: var(--normal-orange);
+    color: #000000;
+
+}
+
+/*Product Card*/
+.product-card {
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+
+}
+
+.product-card .Product-details h6 {
+    color: #b3430b;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.product-card .Product-details h5 {
+    color: #000000;
+    font-size: 14px;
+}
+
+.product-card .Product-details p.price {
+    font-size: 15px;
+}
+
+.product-img {
+    width: 100%;
+    height: 200px;
+}
+
+.cardbtn {
+    background-color: #c75821;
+}
+
+.cardbtn:hover {
+    background-color: var(--normal-orange);
+    color: #000000;
+}
+
+
+
+.action-bar {
+    top: 20px;
+    right: 30px;
+}
+
+/*Product Card*/
+
+/*auth card*/
+.auth-card {
+    padding: 22px;
+    background-color: #ffffff;
+    width: 500px;
+    margin: 30px auto;
+    border-radius: 5px;
+
+}
+
+.auth-card h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--new);
+    text-transform: uppercase;
+    font-family: cursive;
+}
+
+.auth-card p {
+    color: #111;
+
+}
+
+.auth-card .form-control {
+    height: 53px;
+    background-color: #f8f6f6;
+    color: #111;
+    font-size: 14px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.auth-card a {
+    font-size: 14px;
+    font-weight: 520;
+    color: #111;
+}
+
+.auth-card .signup {
+    background-color: #e67238;
+    padding: 8px;
+    border-radius: 4px;
+    color: white;
+}
+
+.auth-card .signup:hover {
+    background-color: #ffffff;
+    color: #e67238;
+}
+
+
+/* Shop henna*/
+.filter-card {
+    background-color: #ecebeb;
+    border-radius: 10px;
+    padding: 10px 16px;
+}
+
+.filter-title {
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 600;
+    color: var(--new);
+    margin-bottom: 0px 0px 14px;
+}
+
+.filter-card ul,
+.filter-card .form-check-label {
+    list-style: none;
+    cursor: pointer;
+    font-size: 15px;
+    line-height: 25px;
+    color: #292929;
+}
+
+.filter-card .form-check-input:focus {
+    background-color: #ffe5b5;
+    box-shadow: none;
+}
+
+.filter-card .form-check-input:checked {
+    background-color: #ee9569;
+}
+
+.sub-title {
+    font-size: 15px;
+    font-weight: 550;
+    color: #292929;
+    margin-bottom: 15px;
+    margin-top: 15px;
+
+}
+
+.filter-sort-grid {
+    padding: 10px;
+    background-color: #e6e6e6;
+    border-radius: 7px;
+}
+
+.grid img {
+    width: 30px;
+    height: 30px;
+    background-color: #c28e74;
+    padding: 7px;
+    border-radius: 4px;
+    margin-right: 5px;
+
+}
+
+.gr-12 {
+    width: 100%;
+}
+
+.gr-6 {
+    width: 49%;
+}
+
+.gr-4 {
+    width: 32%;
+}
+
+.gr-3 {
+    width: 23%;
+}
+
+.gr-12 .product-card {
+    display: flex;
+    gap: 20px;
+}
+
+/*Shop henna end*/
+
+/* Policy page start*/
+.policy {
+    background-color: var(--normal-orange);
+    padding: 30px;
+}
+
+/*policy page end*/
+
+/*Main product page*/
+.discription-wraper h4,
+.reviews-wraper h3 {
+    font-size: 22px;
+    color: #000000;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.discription-wrapper p {
+    font-size: 14px;
+}
+
+.review-inner-wrapper {
+    background-color: #ffffff;
+    padding: 30px;
+}
+
+.review-head {
+    border-bottom: 1px solid rgb(245, 153, 77);
+}
+
+.review-head h4 {
+    font-size: 18px;
+    color: #b3430b;
+    font-weight: 600;
+    font-family: cursive;
+}
+
+.review-head p,
+.review-head a {
+    font-size: 14px;
+    color: #000000;
+}
+
+.review-form h4 {
+    font-size: 16px;
+    color: #000000;
+
+}
+
+.review-form {
+    border-bottom: 1px solid rgb(245, 153, 77);
+}
+
+.review p {
+    font-size: 14px;
+    color: #131212;
+}
+
+.review:not(:last-child) {
+    border-bottom: 1px solid var(--orange);
+}
+
+.review-submit {
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 13px;
+
+}
+
+.review-submit:hover {
+    background-color: #6C2400;
+    color: white;
+}
+
+.main-product-image {
+    padding: 18px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+
+}
+
+.main-product-image>div {
+    border: 1px soli black;
+}
+
+
+.main-product-image .js-image-zoom_zoomed-image {
+    /* right:230px !important; */
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/*Main product page*/
+

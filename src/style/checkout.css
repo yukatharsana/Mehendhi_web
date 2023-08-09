@@ -1,0 +1,8 @@
+.checkout-wrapper{
+    overflow-y: hidden;
+    height: 540px;
+}
+.rigth-container{
+    overflow-y: auto;
+    height: 500px;
+}

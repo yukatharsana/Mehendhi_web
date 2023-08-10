@@ -14,6 +14,18 @@ import Shippingpolicy from '../pages/Shippingpolicy';
 import TermandCondition from '../pages/TermandCondition';
 import SingleProduct from '../pages/SingleProduct';
 import Checkout  from '../pages/Checkout';
+import { Bookhenna } from '../pages/Bookhenna';
+import Booking from '../pages/Booking';
+import Time from '../pages/Time';
+import Times from '../pages/Times';
+import Learnhenna from '../pages/Learnhenna';
+import Reviewlearn from '../components/Reviewlearn';
+import Hennamix from '../pages/Hennamix';
+import Hennaart from '../pages/Hennaart';
+import Hennanail from '../pages/Hennanail';
+
+
+
 const Layout = () => {
     return (
         <>
@@ -28,7 +40,7 @@ const router = createBrowserRouter([
         element: <Layout />,
         children: [
             {
-                path: "/home",
+                path: "/",
                 element: <Home />
             },
             {
@@ -36,7 +48,7 @@ const router = createBrowserRouter([
                 element: <Shophenna />
             },
             {
-                path: "/",
+                path: "/login",
                 element: <Login />
             },
             {
@@ -91,6 +103,42 @@ const router = createBrowserRouter([
             {
                 path: "/TermandCondition",
                 element: <TermandCondition />
+            },
+            {
+                path: "/Bookhenna",
+                element: <Bookhenna />
+            },
+            {
+                path: "/Booking",
+                element: <Booking />
+            },
+            {
+                path: "/Time",
+                element: <Time />
+            },
+            {
+                path: "/Times",
+                element: <Times />
+            },
+            {
+                path: "/Learnhenna",
+                element: <Learnhenna />
+            },
+            {
+                path: "/Reviewlearn",
+                element: <Reviewlearn />
+            },
+            {
+                path: "/Hennamix", 
+                element: <Hennamix />
+            },
+            {
+                path: "/Hennaart", 
+                element: <Hennaart />
+            },
+            {
+                path: "/Hennanail", 
+                element: <Hennanail />
             }
 
 

@@ -3,55 +3,58 @@ import { Link } from 'react-router-dom'
 import Marquee from "react-fast-marquee";
 import ProductCard from '../components/ProductCard';
 import Reveiw from '../components/Reveiw'
+import ko from "../image/ko.png"; 
+import ko1 from "../image/ko1.png"
+import ko2 from "../image/ko2.png"
+import ko3 from "../image/ko3.png"
+import Carousel from 'react-bootstrap/Carousel';
+import ex from "../image/ex.png"
+import logon from "../image/logon.png";
+import img1 from "../image/img1.png";
+import img2 from "../image/img2.png";
+import img3 from "../image/img3.png";
+
+
 function Home() {
     return (
         <>
-            <div className='container'>
-                <div className='row'>
-                    <div className="col-10 mx-auto">
-                        <div id="carouselExampleDark" className="carousel carousel-dark slide" data-bs-ride="carousel">
-                            <div className="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            </div>
-                            <div className="carousel-inner">
-                                <div className="carousel-item active" data-bs-interval="10000">
-                                    <img src="https://www.citimuzik.com/wp-content/uploads/2023/02/page.jpg" className="d-block w-100" alt="..." />
-                                    <div className="carousel-caption d-none d-md-block">
-                                        <h5>First slide label</h5>
-                                        <p>Some representative placeholder content for the first slide.</p>
-                                    </div>
-                                </div>
-                                <div className="carousel-item" data-bs-interval="2000">
-                                    <img src="https://img.weddingbazaar.com/shaadisaga_production/photos/pictures/006/761/006/new_medium/page.jpg?1684415511" className="d-block w-100" alt="..." />
-                                    <div className="carousel-caption d-none d-md-block">
-                                        <h5>Second slide label</h5>
-                                        <p>Some representative placeholder content for the second slide.</p>
-                                    </div>
-                                </div>
-                                <div className="carousel-item">
-                                    <img src="https://images.shaadisaga.com/shaadisaga_production/photos/pictures/004/870/055/new_medium/page.jpg?1663239495" className="d-block w-100" alt="..." />
-                                    <div className="carousel-caption d-none d-md-block">
-                                        <h5>Third slide label</h5>
-                                        <p>Some representative placeholder content for the third slide.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span className="visually-hidden">Previous</span>
-                            </button>
-                            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span className="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div className="text-center">
-                    <h2 className="display-5 mt-5">No.1 Henna Spot In Srilanka</h2>
-                    <h4><b>10 years</b> of experience,  <b>20000+</b> clients hennaed, <b>4.9-star</b> customer Reviews.</h4>
+
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="1000">
+      <img src={ko} class="d-block w-100" alt="..."/>
+      <div class="carousel-caption d-none d-md-block">
+        <h5  className='home-h5'>The Best in Town</h5>
+
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="500">
+      <img src={ko3} class="d-block w-100" alt="..."/>
+      <div class="carousel-caption d-none d-md-block">
+        <h5 className='home-h5'>Do All at one Place</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src={ko1} class="d-block w-100" alt="..."/>
+      <div class="carousel-caption d-none d-md-block">
+        <h5 className='home-h5'>Shipping  Worldwide</h5>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+    
+  
+                <div className="container text-center">
+                    <h2 className="display-5 mt-5">♥︎ SRILANKA'S FIRST EVER ONLINE HENNA STORE ♥︎</h2>
+                    <h4><b>10 years</b> of experience,  <b>20000+</b> clients hennaed, <b>4.8-star</b> customer Reviews.</h4>
                     <div className="d-flex align-items-center justify-content-center w-50 mx-auto mt-5">
 
                         <Link className="d-block btn mx-4 btn-home-henna">SHOP HENNA</Link>
@@ -59,7 +62,7 @@ function Home() {
                         <Link className="d-block btn mx-4 btn-home-henna">HENNA CLASSES</Link>
                     </div>
                 </div>
-            </div>
+            
             <section className='marque-wrapper mt-5 py-2'>
                 <div className='container-xxl'>
                     <div className='row'>
@@ -102,6 +105,7 @@ function Home() {
                     </div>
                 </div>
             </section>
+
             <section className='popular-wraper py-5 home-wrapper-2'>
                 <div className="container-xxl">
                     <div className="row">
@@ -115,9 +119,35 @@ function Home() {
                     </div>
                 </div>
             </section>
+
+            <section class="destination-block cards-destination">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-3 transform-on-hover hovereffect">
+                    <Link to='/bookhenna'> <img src={img1} class="card-img-top" alt=""/></Link>
+                        </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-3 transform-on-hover hovereffect">
+                    <Link to='/shophenna'><img src={img2} class="card-img-top" alt="" /></Link>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-3 transform-on-hover hovereffect">
+                    <Link to='/learnhenna'><img src={img3} class="card-img-top"alt=""/></Link>
+                    </div>
+                </div>
+            </div>                
+        </div>
+    </section>
            <Reveiw/>
         </>
     )
 }
 
+
 export default Home;
+

@@ -27,18 +27,18 @@
 
 .ft-1 h3 {
     font-weight: 700;
-    font-family: cursive;
+    font-family: cursivesystem-ui;
     letter-spacing: 2px;
     padding: 0.5rem 0;
     color: #fff;
 }
 .ft-1 img {
-    width: 40px;
+    width: 100px;
     margin-right: 10px;
 }
 
 .ft-1 span {
-    color: #d4632b;
+    color: #DA467D;
     
 }
 .ft-1 span::after{
@@ -61,14 +61,14 @@
 }
 
 .footer-icons i:hover {
-    background: #cf6530;
+    background: #DA467D;
     color: #fff;
     transition: 0.6s;
     cursor: pointer;
 }
 
 .Footer h5 {
-    color: #ce6531;
+    color: #DA467D;
 }
 
 .ft-2 ul {
@@ -88,7 +88,7 @@
     font-size: 1.06rem;
 }
 .ft-2 ul a:hover{
-    color:#ee9569;
+    color:#DA467D;
 }
 
 .ft-3 p {
@@ -100,11 +100,11 @@
 
 .ft-3 i {
     padding-right: 0.5rem;
-    color: #ee9569;
+    color: #DA467D;
 }
 
 .Last-footer {
-    background: #bd470d;;
+    background: #DA467D;
     text-align: center;
     padding: 1rem 0;
     color: #070707;

@@ -1,102 +1,105 @@
 import React from 'react'
-import { Link, NavLink,useLocation} from 'react-router-dom';
+import { BiPhoneCall } from 'react-icons/bi';
+import { Link, NavLink } from 'react-router-dom';
 import { FaRegUserCircle} from 'react-icons/fa'
 import "../style/App.css"
 import { BsSearch, BsCart4 } from "react-icons/bs"
-import logo from "../image/logo.jpg";
-import '../style/Header.css'
+import logon from "../image/logon.png";
+import '../style/App.css'
+import { CiMail } from 'react-icons/ci'
+import { AiOutlineFacebook, AiOutlineInstagram,AiOutlineWhatsApp} from "react-icons/ai"
+import {HiOutlineInboxIn} from 'react-icons/hi'
+import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
+import Form from 'react-bootstrap/Form';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+
 const Header = () => {
-    const location = useLocation();
-   
   return (
-    <>
-      <header className="header-top-strip ">
+  <>
+         <header className="header-top-strip p-1 px-4 shadow-md ">
         <div className='container-xxl'>
-          <div className='row'>
-            <div className='col-6'>
-              <p className='text-white mb-0'>
-                Free shipping over $100
+          <marquee>
+          <div className='row align-items-center'>
+            <div className='col-lg-6'>
+              <p className='ok'>
+               FREE SHIPPING FOR ORDERS ABOVE 100 USD
               </p>
             </div>
-            <div className='col-6'>
-              <p className='text-end text-white mb-0'>
-                Hotline:<Link className='text-white' to='tel:+91 782345986723'>+94 380945860954</Link>
-              </p>
+            <div className='col-lg-6 d-flex justify-content-between align-items-center'>
+             <div>
+             <a href="tel:+254708118414"> CALL US AT +94 (234) 567-890</a>
+             </div>
+             <div className=' col-lg-6' >
+              <Link><AiOutlineFacebook className='fs-4 mx-2' /></Link> 
+              <Link><AiOutlineInstagram className='fs-4 mx-2' /></Link> 
+              <Link><AiOutlineWhatsApp className='fs-4 mx-2' /></Link> 
+
+             </div>
             </div>
           </div>
+          </marquee>
         </div>
-      </header>
-      <header className="header-upper py-2 ">
-        <div className='container-xxl'>
-          <div className='row d-flex align-items-center justify-content-between'>
-            <div className='col-4'>
-              <NavLink to='/home'>
-                <img src={logo} width="100px" className='img-fluid rounded-circle logo' alt='logo' />
-              </NavLink>
-            </div>
-            <div className='col-4'>
-              <div className="input-group ">
-                <input type="text" className="form-control py-2" placeholder="Search products here" aria-label="Search products h2re" aria-describedby="basic-addon2" />
-                <span className="input-group-text p-3" id="basic-addon2"> <BsSearch className='fs-5' /> </span>
+      </header> 
+
+      <header className='header-upper px-3 sticky-top'>
+        <div className="container-xxl">
+          <div className="row">
+          <Navbar expand="lg" className="nav-links">
+      <Container fluid>
+        <Navbar.Brand href="/" className='logop text-center'> <img src={logon} alt='' className='img-fluid logo m-0' /></Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbarScroll" className='toggle'/>
+        <Navbar.Collapse id="navbarScroll">
+          <Nav
+            className="me-auto my-2 my-lg-0 nav-links "
+            style={{ maxHeight: '100px' }}
+            navbarScroll
+          >
+             <Nav.Link href="/Shophenna"><p className='nav-links'>SHOP HENNA</p></Nav.Link>
+            <Nav.Link href="/Bookhenna"><p className='nav-links'>BOOK HENNA</p></Nav.Link>
+            <Nav.Link href="/Learnhenna"><p className='nav-links'>LEARN HENNA</p></Nav.Link>
+           
+  
+            <Nav.Link href=" "><p className='nav-links'>
+              CONTACT </p>
+            </Nav.Link>
+          </Nav>
+          <div className="col-md-6 col-lg-3 d-flex align-items-center mt-3">
+             <div className="input-group mb-3 ">
+                <input type="text" className="form-control p-2" placeholder="Search.." aria-label="Search products h2re" aria-describedby="basic-addon2" />
+                <span className="input-group-text" id="basic-addon2"> <BsSearch className='fs-5' /> </span>
               </div>
-            </div>
-            <div className='col-4 right-side-bar'>
-              <div className='header-upper-links d-flex align-items-center justify-content-end'>
+             </div>
+
+        </Navbar.Collapse>
+        <div className=" col-lg-3 d-flex align-items-center justify-content-around">
+            <div className='header-upper-links d-flex align-items-center justify-content-end'>
                 <div className='px-3'>
-                  <Link className='d-flex'>
+                  <Link className='d-flex iiuser'>
                     <FaRegUserCircle to="/Login" className='iuser' />
-                    <p className='ms-2 text-light'>MyAccount</p>
+                    <p className='ms-2  upon'>My Account</p>
                   </Link>
                 </div>
                 <div className='px-3'>
-                  <Link className='d-flex align-items-center position-relative'>
+                  <Link className='d-flex align-items-center position-relative iicart'>
                     <BsCart4 to="/Cart" className='icart' />
+                    <p className='ms-2 upon '>Cart</p>
                     <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-light text-dark">
                       1
                     </span>
                   </Link>
-                </div>
-              </div>
+                </div></div>
             </div>
-          </div>
-        </div>
-      </header>
-      <header className="header-bottom ">
-        <div className='container-xxl'>
-          <div className='row'>
-            <div className='col-12'>
-              <div className='navbar navbar-expand-lg menu-bottom'>
-                <div>
-                  <div className="dropdown">
-                    <button className="btn btn-secondary dropdown-toggle bg-transparent border-0  me-5 d-flex align-items-center" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-
-                      <span className="me-2 d-inline-block">Categories</span>
-                    </button>
-                    <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li><Link className="dropdown-item text-white" to="#">Action</Link></li>
-                      <li><Link className="dropdown-item text-white" to="#">Another action</Link></li>
-                      <li><Link className="dropdown-item text-white" to="#">Something else here</Link></li>
-                    </ul>                 
-                    </div>
-                </div>
-                <div className='menu-links '>
-                  <ul className='w-75 navbar-nav'>
-                    <li className={`nav-item  px-3 ${location.pathname === '/home' ? 'navactive' : ''}`}><NavLink className="nav-link text-white" to="/home">Home</NavLink></li>
-                    <li className={`nav-item  px-3 ${location.pathname === '/Shophenna' ? 'navactive' : ''}`}><NavLink className="nav-link text-white" to="/Shophenna">Shophena</NavLink></li>
-                    <li className={`nav-item  px-3 ${location.pathname === '/' ? 'navactive' : ''}`}><NavLink className="nav-link text-white" to="/">BOOKSERVICE</NavLink></li>
-                    <li className={`nav-item  px-3 ${location.pathname === '/' ? 'navactive' : ''}`}><NavLink className="nav-link text-white" to="/">HENNACLASSES</NavLink></li>
-                    <li className={`nav-item  px-3 ${location.pathname === '/Contact' ? 'navactive' : ''}`}><NavLink className="nav-link text-white" to="/Contact">Contact</NavLink></li>
-                  </ul> 
-           </div>
-
-              </div>
-
-            </div>
+      </Container>
+    </Navbar>
+           
           </div>
         </div>
       </header>
 
-    </>
+  </>
   )
 }
 

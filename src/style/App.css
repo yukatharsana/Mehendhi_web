@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Sacramento');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Great+Vibes&family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --black: black;
     --light-black: #292929;
@@ -7,40 +17,149 @@
     --new: #ce6531;
     --normal-orange: #ee9569;
     --gray: #b9b6b6;
-    --hoverBorder:2.5px ridge #bd470d;
 
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    transition: all ease-in 0.2s;
-    scroll-behavior: smooth;
+.hovereffect:hover img {
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+    filter: brightness(0.6);
+    -webkit-filter: brightness(0.6);
+  }
+.logo{
+    height: 100px;
+    font-weight: 10px;
+    will-change: filter;
+    transition: filter 300ms;
 }
-*::-webkit-scrollbar{
-    display: none;
+a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #000000;
 }
+
+p{
+    color: #000000;
+    font-size: 14px;
+    margin: auto;
+}
+
 
 
 .card-wrapper {
-    background-color: #ffffff;
+    background-color: #fff;
     box-shadow: 0 0 10px rgb(114, 95, 95)1b1;
-    padding: 10px;
+    padding: 15px;
 }
 
 body {
     font-family: 'Rubik', sans-serif;
-    background: #f7f7f7;
+    background: #ffffff;
 }
 
 a {
     text-decoration: none;
     display: inline-block;
+    font-size: 14px;
 }
+
+
+
+/*header part*/
+.header-top-strip {
+   background-color:  #DA467D;
+   
+}
+.nav-links a{
+    font-size: 16px;
+   text-transform: uppercase;
+    color: #DA467D;
+}
+.nav-links {
+    font-size: 16px;
+   text-transform: uppercase;
+    color: #DA467D;
+}
+
+
+.header-upper {
+    background-color: #000000;
+
+}
+.navbar-toggler{
+    background-color: #DA467D;
+   
+}
+
+.header-upper .input-group-text {
+    background-color:#DA467D;
+}
+
+.form-controll:focus {
+    box-shadow: none;
+    border-color: var(--gray);
+}
+
+.icart {
+    width: 34px;
+    height: 30px;
+    color: #DA467D;
+}
+
+.iuser {
+    width: 34px;
+    height: 30px;
+    color: #DA467D;
+}
+
+.header-bottom {
+    background-color: #fffdfd;
+    padding: 1px;
+}
+.upon {
+    color: #DA467D;
+}
+.ok{
+    font-weight: 550;
+}
+.menu-links {
+    color: var(--lite-orange);
+    font-size: 14px;
+    letter-spacing: 0.3;
+    line-height: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: block;
+
+}
+
+
+
+.header-bottom .dropdown button:focus {
+    box-shadow: none;
+}
+
+.header-bottom .dropdown-menu {
+    background-color: var(--black);
+    width: 100%;
+    transform: translate3d(0px, 30px, 0px) !important;
+}
+
+.header-bottom .dropdown-item {
+    padding: 5px;
+    margin-bottom: 3px;
+    border-bottom: 1px solid var(--lite-orange);
+}
+
+.header-bottom .dropdown-item:hover {
+    background-color: var(--lite-orange);
+}
+
+
+
+/*header end*/
 /*Home page start*/
-.Container h2 {
-    color: #bd470d;
-    font-size: 55px;
+.container h2 {
+    color: #DA467D;
+    font-size: 40px;
     font-weight: 600;
 }
 
@@ -54,7 +173,13 @@ a {
     font-size: 1.2rem;
 
 }
-
+.home-h5{
+  font-size: 40px;
+  font-weight: 100px;
+  color: #ffffff;
+ font-family: 'Pacifico', cursive
+ 
+}
 .service {
     background-color: #b5b5b577;
 }
@@ -75,7 +200,7 @@ a {
 
 /*home button*/
 .btn-home-henna {
-    background-color: #c75821;
+    background-color: #DA467D;
     color: #fff;
 }
 
@@ -85,14 +210,12 @@ a {
 
 }
 
+
 /*Product Card*/
 .product-card {
     padding: 15px;
     background-color: #ffffff;
-    border-radius: 10px;
-    overflow: hidden;
-    width: 100%;
-
+    border-radius: 2px;
 }
 
 .product-card .Product-details h6 {
@@ -132,7 +255,6 @@ a {
 }
 
 /*Product Card*/
-
 /*auth card*/
 .auth-card {
     padding: 22px;
@@ -148,12 +270,10 @@ a {
     font-weight: 600;
     color: var(--new);
     text-transform: uppercase;
-    font-family: cursive;
 }
 
 .auth-card p {
     color: #111;
-
 }
 
 .auth-card .form-control {
@@ -223,7 +343,6 @@ a {
     color: #292929;
     margin-bottom: 15px;
     margin-top: 15px;
-
 }
 
 .filter-sort-grid {
@@ -235,13 +354,12 @@ a {
 .grid img {
     width: 30px;
     height: 30px;
-    background-color: #c28e74;
+    background-color: #b3430b;
     padding: 7px;
-    border-radius: 4px;
+    border-radius: 3px;
     margin-right: 5px;
 
 }
-
 .gr-12 {
     width: 100%;
 }
@@ -262,6 +380,7 @@ a {
     display: flex;
     gap: 20px;
 }
+
 
 /*Shop henna end*/
 
@@ -362,3 +481,536 @@ a {
 
 /*Main product page*/
 
+
+
+/*book henna start*/
+.headerSearch{
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid #DA467D;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 10px;
+    border-radius: 5px;
+    position: relative;
+    bottom: -25px;
+}
+
+.headerIcon{
+    color: lightgray;
+
+}
+.text-color{
+   color: #DA467D;
+}
+.text-font-size h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+.text-font-size p{
+    font-size: 15px;
+}
+.text-font-size-bg h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+@media screen and (max-width: 600px) {
+    .ash {
+        width: 400px;
+        height: 200px;
+
+    }
+  }
+  @media screen and (max-width: 300px) {
+    .ash {
+        width: 100px;
+        height: 50px;
+
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .ash {
+        width: 350px;
+        height: 200px;
+
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .logop {
+      justify-content: center;
+
+    }
+   .iiuser{
+    visibility: hidden;
+    
+
+   }
+   .iicart{
+    display: flex;
+  justify-content: flex-end;
+
+   }
+
+
+
+}
+
+ /* Destination */
+ .destination-block{
+	padding-bottom: 60px; 
+	padding-top: 60px;
+}
+.destination-block .heading{
+	margin-bottom: 50px; 
+	text-align: center;
+}
+.destination-block .heading h2{
+	font-weight: bold;
+	font-size: 1.4rem; 
+	text-transform: uppercase;
+}
+.destination-block.cards-destination h6{
+	font-size: 17px; 
+	font-weight: bold;
+}
+.destination-block.cards-destination .card{
+	transition: 0.4s easy;
+}
+.destination-block.cards-destination .card img{
+	box-shadow: 0px 2px 10px rgba(0,0,0,0.15);
+}
+.destination-block.cards-destination .card-body{
+	text-align: center;
+}
+.destination-block.cards-destination .card-body p{
+	font-size: 15px;
+}
+.destination-block.cards-destination a{
+	color:#212529; 
+}
+.destination-block.cards-destination a:hover{
+	text-decoration: none;
+}
+.destination-block.cards-destination  .card{
+	margin-bottom: 30px;
+	box-shadow: 0px 2px 10px rgba(0,0,0,0.15);
+}
+ /* Responsive layout for destination page*/
+@media (min-width: 576px) {
+
+	.destination-block .transform-on-hover:hover {
+	    transform: translateY(-10px) scale(1.02);
+	    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15) !important; 
+	}}
+
+.text-left{
+    text-align: left;
+}
+.container h1 {
+    color: #DA467D;
+    font-size: 40px;
+    font-weight: 600;
+}
+.bg-cards{
+    background-color: #ffcddf;
+}
+.bg-darkmade{
+    background-color: #DA467D;
+    
+}
+.price_du{
+    background-color: #DA467D;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+}
+.bbb{
+    border-radius: 50px 50px 50px 50px;
+    box-shadow: 0px 1px 4px 0px rgba(48.23620605468753, 48.236206054687);
+
+ 
+}
+.destination-block .transform-on-hoverr:hover{
+    transform: scale(0.9 , 0.9 );
+    border-radius: 50px 50px 50px 50px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+   background-color: #000000;
+}
+.transform-on-hoverr:hover{
+    transform: scale(0.9 , 0.9 );
+    border-radius: 50px 50px 50px 50px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+   background-color: #000000;
+
+}
+.btn-book-henna {
+    background-color: #DA467D;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+  }
+
+.typescolor{
+  color: #aeaeae;
+}
+
+
+/* booking.js */
+
+
+.app {
+  /* text-align: center; */
+  margin: 0 auto;
+  width: 50%;
+}
+  
+  .selected-date {
+    margin: 0 auto;
+  }
+  
+  .times button {
+    display: inline-block;
+    background-color:#000000;
+    color:#DA467D ;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: large;
+    width: 200px;
+    height: 30px;
+     padding: 2px;
+    border-radius: 8px;
+    border-color: #DA467D;
+  }
+ 
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-header {
+    background-color: #010101;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #ffffff;
+  }
+  
+  
+  
+  /* react calendar */
+  
+  
+  .react-calendar { 
+    width: 700px;
+    max-width: 100%;
+    background-image: linear-gradient(to right, rgb(27, 26, 26) , rgb(30, 30, 29));
+    color: #DA467D;
+    border-radius: 8px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.125em;
+    
+   }
+  
+   .react-calendar__navigation button {
+    color: #DA467D;
+    min-width: 44px;
+    background:none;
+    font-size: 16px;
+    margin-top: 8px;
+   }
+  
+  .react-calendar--doubleView {
+    width: 700px;
+  }
+  .react-calendar--doubleView .react-calendar__viewContainer {
+    display: flex;
+    margin: -0.5em;
+  }
+  .react-calendar--doubleView .react-calendar__viewContainer > * {
+    width: 50%;
+    margin: 0.5em;
+  }
+  .react-calendar,
+  .react-calendar *,
+  .react-calendar *:before,
+  .react-calendar *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #DA467D;
+  }
+  .react-calendar button {
+    margin: 0;
+    border: 0;
+    outline: none;
+  }
+  .react-calendar button:enabled:hover {
+    cursor: pointer;
+  }
+  .react-calendar__navigation {
+    display: flex;
+    height: 44px;
+    margin-bottom: 1em;
+  }
+  .react-calendar__navigation button {
+    min-width: 44px;
+    /* background: none; */
+  }
+  .react-calendar__navigation button:enabled:hover,
+  .react-calendar__navigation button:enabled:focus {
+    background-color: #ffcddf;
+  }
+  .react-calendar__navigation button[disabled] {
+    background-color: #1a1919;
+  }
+  .react-calendar__month-view__weekdays {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.75em;
+  }
+  .react-calendar__month-view__weekdays__weekday {
+    padding: 0.5em;
+  }
+  .react-calendar__month-view__weekNumbers .react-calendar__tile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75em;
+    font-weight: bold;
+    padding: calc(0.75em / 0.75) calc(0.5em / 0.75);
+  }
+  .react-calendar__month-view__days__day--weekend {
+    /* color: #d10000; */
+    color: white;
+  }
+  .react-calendar__month-view__days__day--neighboringMonth {
+    color: white;
+  }
+  .react-calendar__year-view .react-calendar__tile,
+  .react-calendar__decade-view .react-calendar__tile,
+  .react-calendar__century-view .react-calendar__tile {
+    padding: 2em 0.5em;
+  }
+  .react-calendar__tile {
+    max-width: 100%;
+    text-align: center;
+    padding: 0.75em 0.5em;
+    background: none;
+  }
+  .react-calendar__tile:disabled {
+    background-color: #000000;
+    text-decoration: line-through;
+    color: #ffb0cd;
+  }
+  .react-calendar__tile:enabled:hover,
+  .react-calendar__tile:enabled:focus {
+    background-color: #e6e6e6;
+
+  }
+  .react-calendar__tile--now {
+    /* background: #ffff76; */
+    background-color: #000000;
+  }
+  .react-calendar__tile--now:enabled:hover,
+  .react-calendar__tile--now:enabled:focus {
+    background: #ffffff;
+  }
+  .react-calendar__tile--hasActive {
+    background: #ffcddf;
+  }
+  .react-calendar__tile--hasActive:enabled:hover,
+  .react-calendar__tile--hasActive:enabled:focus {
+    background: #f09bba;
+  }
+  .react-calendar__tile--active {
+    background: #ffcddf;
+    color: white;
+  }
+  .react-calendar__tile--active:enabled:hover,
+  .react-calendar__tile--active:enabled:focus {
+    background: #ffcddf;
+  }
+
+  .timbtn{
+    display: inline-block;
+    padding-inline:    10px;
+    justify-items: center;
+
+  }
+  .bgapp{
+    background-image: linear-gradient(to right, rgb(27, 26, 26) , rgb(30, 30, 29));
+    border-radius: 8px;
+  }
+  .bgapp h1{
+    color:#DA467D;
+    font-size: 20px;
+    text-transform:uppercase
+  }
+  .timedatecon{
+    color: #DA467D;
+    text-transform: uppercase;
+    background-color: #ecebeb;
+    text-align: center;
+  }
+  .transform-on-hoverrr:hover{
+ 
+    border-radius: 8px;
+    background-color: #ccbbbb;
+
+}
+
+
+    /* learn henna */
+
+.btn-learn-henna{
+  background-color: #DA467D;
+  color: #fff;
+  font-weight: bold;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  border-radius: 10px;
+ 
+}
+.btn-learn-card-henna{
+  background-color: #DA467D;
+  color: #fff;
+  font-weight: bold;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  border-radius: 10px;
+ 
+}
+
+.bgaboutlearn{
+  background-image: linear-gradient(#ffe2ed, rgb(255, 250, 250));
+}
+
+.viewing{
+  text-align: left;
+}
+.btn-pr{
+  background-color: #DA467D;
+  color: #fff;
+  font-weight: bold;
+}
+.cal{
+  color: #DA467D;
+}
+.redcolor{
+  color: rgb(214, 19, 19);
+}
+.parent {
+
+  background-size: cover;
+  position: relative;
+}
+.text{
+  color:white;
+  position: absolute;
+  font-size: large;
+}
+
+.pic-txt{
+  font-size: 90px;
+  font-weight: bold;
+}
+
+.center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.par-txt{
+  font-size: 30px;
+  font-weight: 700px;
+  text-align: center;
+  color: #fff;
+}
+@media screen and (max-width: 600px) {
+  .par-txt{
+    font-size: 10px;
+    font-weight: 700px;
+    text-align: center;
+    color: #fff;
+  }
+  .pic-txt{
+    font-size: 50px;
+    font-weight: bold;
+  }
+}
+label{
+  font-size: 15px;
+}
+.pic-txt-mix{
+  font-size: 10px;
+  font-weight: bold;
+  
+}
+.bgcaro{
+  background-image: url(bg.png);
+
+}
+.img-caro{
+  border-radius: 8px;
+}
+.caro-h1{
+  color: #e6e6e6;
+  font-weight: bold;
+}
+.caro-p{
+  color: #e6e6e6;
+  font-size: 20px;
+}
+.caro-h3{
+  color: #e6e6e6;
+  font-weight: bold;
+  font-size: 25px;
+}
+.caro-h3 span{
+  color: #DA467D;
+}
+.cal-caro{
+  color: #DA467D;
+}
+.btn-learn-henna-mix{
+
+  background-color: #DA467D;
+  color: #fff;
+  font-weight: bold;
+  padding-left: 50px;
+  padding-right: 50px;
+  
+  padding-bottom: 5px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  border-radius: 10px;
+
+}
+.bg-details{
+  background-image: linear-gradient(#ffe2ed, rgb(255, 250, 250));
+  width: 100%;
+}

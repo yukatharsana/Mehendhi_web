@@ -1,6 +1,6 @@
 import React from 'react'
-import BreadCrumb from '../coponents/Breadcrumb'
-import Meta from "../coponents/Meta"
+import BreadCrumb from '../components/Breadcrumb'
+import Meta from "../components/Meta"
 
 const Contact = () => {
     return (

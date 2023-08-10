@@ -2,8 +2,8 @@ import { createBrowserRouter, Outlet } from 'react-router-dom';
 import Login from '../pages/Login'
 import Cart from'../pages/Cart'
 import Home from '../pages/Home'
-import Footer from '../coponents/Footer'
-import Header from '../coponents/Header'
+import Footer from '../components/Footer'
+import Header from '../components/Header'
 import Shophenna from '../pages/Shophenna';
 import Forgotpassword from '../pages/Forgotpassword';
 import Signup from '../pages/Signup';

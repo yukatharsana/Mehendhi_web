@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Marquee from "react-fast-marquee";
-import ProductCard from '../coponents/ProductCard';
-import Reveiw from '../coponents/Reveiw'
+import ProductCard from '../components/ProductCard';
+import Reveiw from '../components/Reveiw'
 function Home() {
     return (
         <>

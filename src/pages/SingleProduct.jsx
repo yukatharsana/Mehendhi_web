@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import Breadcrumb from '../coponents/Breadcrumb'
-import Meta from "../coponents/Meta"
-import ProductCard from '../coponents/ProductCard';
+import Breadcrumb from '../components/Breadcrumb'
+import Meta from "../components/Meta"
+import ProductCard from '../components/ProductCard';
 import ReactStars from "react-rating-stars-component";
 import { Link } from 'react-router-dom'
 

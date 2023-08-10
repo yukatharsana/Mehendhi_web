@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import Breadcrumb from '../coponents/Breadcrumb'
-import ProductCard from '../coponents/ProductCard';
+import Breadcrumb from '../components/Breadcrumb'
+import ProductCard from '../components/ProductCard';
 import '../style/shophena.css'
 
 

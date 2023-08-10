@@ -1,6 +1,6 @@
 import React from 'react'
-import Breadcrumb from '../coponents/Breadcrumb'
-import Meta from "../coponents/Meta"
+import Breadcrumb from '../components/Breadcrumb'
+import Meta from "../components/Meta"
 
 const PrivacyPolicy = () => {
     return (

@@ -27,11 +27,11 @@ const Checkout = () => {
                 <p className="user-details">Tharsha jeeva(Tharsha@gmail.com)</p>
               </div>
 
-              <form className='d-flex gap-15 flex-wrap justify-content-between'>
+              <form className='checkout-form d-flex gap-15 flex-wrap justify-content-between'>
                 <div className='w-100'>
-                  <select name="" className='form-control form-select my-2' id="">
-                    <option value="" selected disabled>Selected Country</option>
-                  </select>
+                  <div className='flex-grow-1 my-2'>
+                    <input type="text" placeholder='Enter your country' className='form-control' />
+                  </div>
                 </div>
                 <div className='flex-grow-1 my-2'>
                   <input type="text" placeholder='First Name' className='form-control' />
@@ -61,28 +61,29 @@ const Checkout = () => {
 
                 <div className="w-100">
                   <div className="d-flex justify-content-between align-items-center">
-                    <Link to="/Cart" className='text-cart'><BiArrowBack className='me-2 ' />Back to Card</Link>
+                    <Link to="/Cart" className='text-cart'><BiArrowBack className='me-2 '/>Back to Card</Link>
                     <Link to="/" className="button-checkout mt-2">Continue to shipping</Link>
                   </div>
                 </div>
               </form>
             </div>
             <div className='col-5 mx-auto rigth-container'>
+             
               <div className='border-bottom py-4'>
                 <div className="d-flex gap-10 align-align-items-center">
                   <div className='w-75 d-flex gap-10'>
                     <div className='w-25 position-relative'>
-                      <span style={{ top: "-10px", right: "2px" }} className='badge bg-secondary text-white rounded-circle p-2 position-absolute'>
+                      <span style={{ top: "-10px", right: "2px" }} className='badge bg-secondary text-white rounded-circle p-1.2 position-absolute'>
                         1
                       </span>
                       <img className="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBnss8vm9NybpncPQcyICbq2md7hM6VjWgVA&usqp=CAU" alt="" />
                     </div>
                     <div>
-                      <h5 className='title'>henna</h5>
-                      <p>s/jhj</p>
+                      <h5 className='check-title'>Henna Powder</h5>
+                      <p>This henna powder is 100% natural product</p>
                     </div>
                   </div>
-                  <div className='flex-grow gap'>
+                  <div className='check0ut-prc flex-grow gap'>
                     <h5>$100</h5>
                     <p></p>
                   </div>
@@ -92,17 +93,17 @@ const Checkout = () => {
                 <div className="d-flex gap-10 align-align-items-center">
                   <div className='w-75 d-flex gap-10'>
                     <div className='w-25 position-relative'>
-                      <span style={{ top: "-10px", right: "2px" }} className='badge bg-secondary text-white rounded-circle p-2 position-absolute'>
+                      <span style={{ top: "-10px", right: "2px" }} className='badge bg-secondary text-white rounded-circle p-1.2 position-absolute'>
                         1
                       </span>
                       <img className="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBnss8vm9NybpncPQcyICbq2md7hM6VjWgVA&usqp=CAU" alt="" />
                     </div>
                     <div>
-                      <h5 className='title'>henna</h5>
-                      <p>s/jhj</p>
+                      <h5 className='check-title'>Henna Powder</h5>
+                      <p>This henna powder is 100% natural product</p>
                     </div>
                   </div>
-                  <div className='flex-grow gap'>
+                  <div className='check0ut-prc flex-grow gap'>
                     <h5>$100</h5>
                     <p></p>
                   </div>
@@ -112,80 +113,82 @@ const Checkout = () => {
                 <div className="d-flex gap-10 align-align-items-center">
                   <div className='w-75 d-flex gap-10'>
                     <div className='w-25 position-relative'>
-                      <span style={{ top: "-10px", right: "2px" }} className='badge bg-secondary text-white rounded-circle p-2 position-absolute'>
+                      <span style={{ top: "-10px", right: "2px" }} className='badge bg-secondary text-white rounded-circle p-1.2 position-absolute'>
                         1
                       </span>
                       <img className="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBnss8vm9NybpncPQcyICbq2md7hM6VjWgVA&usqp=CAU" alt="" />
                     </div>
                     <div>
-                      <h5 className='title'>henna</h5>
-                      <p>s/jhj</p>
+                      <h5 className='check-title'>Henna Powder</h5>
+                      <p>This henna powder is 100% natural product</p>
                     </div>
                   </div>
-                  <div className='flex-grow gap'>
+                  <div className='check0ut-prc flex-grow gap'>
                     <h5>$100</h5>
                     <p></p>
                   </div>
                 </div>
               </div>
+
               <div className='border-bottom py-4'>
                 <div className="d-flex gap-10 align-align-items-center">
                   <div className='w-75 d-flex gap-10'>
                     <div className='w-25 position-relative'>
-                      <span style={{ top: "-10px", right: "2px" }} className='badge bg-secondary text-white rounded-circle p-2 position-absolute'>
+                      <span style={{ top: "-10px", right: "2px" }} className='badge bg-secondary text-white rounded-circle p-1.2 position-absolute'>
                         1
                       </span>
                       <img className="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBnss8vm9NybpncPQcyICbq2md7hM6VjWgVA&usqp=CAU" alt="" />
                     </div>
                     <div>
-                      <h5 className='title'>henna</h5>
-                      <p>Henna powder</p>
+                      <h5 className='check-title'>Henna Powder</h5>
+                      <p>This henna powder is 100% natural product</p>
                     </div>
                   </div>
-                  <div className='flex-grow gap'>
+                  <div className='check0ut-prc flex-grow gap'>
                     <h5>$100</h5>
                     <p></p>
                   </div>
                 </div>
               </div>
+
               <div className='border-bottom py-4'>
                 <div className="d-flex gap-10 align-align-items-center">
                   <div className='w-75 d-flex gap-10'>
                     <div className='w-25 position-relative'>
-                      <span style={{ top: "-10px", right: "2px" }} className='badge bg-secondary text-white rounded-circle p-2 position-absolute'>
+                      <span style={{ top: "-10px", right: "2px" }} className='badge bg-secondary text-white rounded-circle p-1.2 position-absolute'>
                         1
                       </span>
                       <img className="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBnss8vm9NybpncPQcyICbq2md7hM6VjWgVA&usqp=CAU" alt="" />
                     </div>
                     <div>
-                      <h5 className='title'>henna</h5>
-                      <p>s/jhj</p>
+                      <h5 className='check-title'>Henna Powder</h5>
+                      <p>This henna powder is 100% natural product</p>
                     </div>
                   </div>
-                  <div className='flex-grow gap'>
+                  <div className='checkout-prc flex-grow gap'>
                     <h5>$100</h5>
                     <p></p>
                   </div>
                 </div>
               </div>
-              <div className='border-bottom py-4'>
+              <div className='checkoutblns border-bottom py-4'>
+                <div className=' d-flex justify-content-between align-items-center'>
+                  <h5>Sub Total</h5>
+                  <h5>$500</h5>
+                </div>
                 <div className='d-flex justify-content-between align-items-center'>
-                  <p>Sub Total</p>
-                  <p>$1000</p>
-                </div>
-                <div className='d-flex justify-content-between align-items-center'>
-                  <p className='mb-0'>Shipping</p>
-                  <p className='mb-0'>$1000</p>
+                  <h5 className=' mb-0'>Shipping</h5>
+                  <h5 className='mb-0'>$200</h5>
                 </div>
               </div>
-              <div className='d-flex justify-content-between align-items-center border-bottom py-4'>
-                <h4>Total</h4>
-                <h5>$1000</h5>
+              <div className='check-granttotal d-flex justify-content-between align-items-center border-bottom py-4'>
+                <h4><b>Total</b></h4>
+                <h5><b>$700</b></h5>
               </div>
               <div></div>
             </div>
           </div>
-        </div >
+        </div>
       </div>
     </>
   )

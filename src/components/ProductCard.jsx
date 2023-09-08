@@ -8,7 +8,7 @@ const ProductCard = (props) => {
     return (
         <>
             <div className={` ${location.pathname === "/store" ? `col-${grid}` : "col - 3 "} `}>
-           
+
                 <Link to='/product/:id' className='product-card position-relative shadow'>
                     <div className="product-image px-2 ">
                         <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBnss8vm9NybpncPQcyICbq2md7hM6VjWgVA&usqp=CAU' alt="product image" />

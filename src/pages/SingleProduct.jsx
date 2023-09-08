@@ -2,11 +2,15 @@ import React, { useState } from 'react'
 import Breadcrumb from '../components/Breadcrumb'
 import Meta from "../components/Meta"
 import ProductCard from '../components/ProductCard';
+import hennail from "../image/hennail.jpeg";
+import Sngprod from "../image/Sngprod.png";
+import imgsingpro from "../image/imgsingpro.jpeg";
+import imgsingpro1 from "../image/imgsingpro.jpeg";
 import ReactStars from "react-rating-stars-component";
 import { Link } from 'react-router-dom'
 
 const SingleProduct = () => {
-    const props = { width: 400, height: 250, zoomWidth: 550,  img: '' };
+    const props = { width: 400, height: 250, zoomWidth: 550, img: '' };
 
     const [OrderedProducts, setorderProduct] = useState(true);
     return (
@@ -16,27 +20,41 @@ const SingleProduct = () => {
             <div className='main-product-wrapper py-5 home-wrapper-2'>
                 <div className=' container-xxl'>
                     <div className='row'>
-                        <div className="col-6">
+                        <div className="col-5">
                             <div className="main-product-image ">
                                 <div >
-                                    <div className='row my-2'>
-                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-HtYu1bo2AORoVJQBW2ccHHJQGx1DRaK7zg&usqp=CAU" alt="" className='col-12' />
+                                    <div className='big-img row my-2'>
+                                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBnss8vm9NybpncPQcyICbq2md7hM6VjWgVA&usqp=CAU' class="mb-3" alt="product image" />                                       
                                     </div>
                                     <div className='row'>
-                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN3g-koulWz3lKK6JYFxsogU5eocbOxAe4H916pv0IXZWWXnrmcd33uGrxVOouPqxiNnw&usqp=CAU" alt="" className="col-4 px-2 my-1"/>
-                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTD1LbINzFz6gcUVOBscemIaymse5EM7fznj6iSYd4MXzFcYvN0sos6iEsELtBAiG8_Fg&usqp=CAU" alt="" className="col-4 px-2 my-1"/>
-                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs3CoZ0PY39H3gpw5qvvjs6f41_8A_q7qBBg_-PnVM64_GZDIpFSSiuSYPV9ZVKcJQHiM&usqp=CAU" alt="" className="col-4 px-2 my-1"/>
-                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTD1LbINzFz6gcUVOBscemIaymse5EM7fznj6iSYd4MXzFcYvN0sos6iEsELtBAiG8_Fg&usqp=CAU" alt="" className="col-4 px-2 my-1"/>
-                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs3CoZ0PY39H3gpw5qvvjs6f41_8A_q7qBBg_-PnVM64_GZDIpFSSiuSYPV9ZVKcJQHiM&usqp=CAU" alt="" className="col-4 px-2 my-1"/>
-                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTD1LbINzFz6gcUVOBscemIaymse5EM7fznj6iSYd4MXzFcYvN0sos6iEsELtBAiG8_Fg&usqp=CAU" alt="" className="col-4 px-2 my-1"/>
+                                        <img src={imgsingpro} class="mb-3" alt="" className="col-4 px-2 my-1" />
+                                        <img src={imgsingpro1} class="mb-3" alt="" className="col-4 px-2 my-1" />
+                                        <img src={imgsingpro1} class="mb-3" alt="" className="col-4 px-2 my-1" />                                       
                                     </div>
                                 </div>
-
                             </div>
                         </div>
-                        <div className="col-6">
-                        <Breadcrumb title={"Jagua Henna/ 12 Jagua Henna Cones"} />
-                        <h3>12 JAGUA HENNA Conses (HENGUA FLASH SALE)</h3>
+                        <div className="col-1"></div>
+                        <div className="col-5">
+                            <Breadcrumb title={"SHIFASH HENNA/ SHIFASH HENNA CONE"} />
+                            <div>
+                                <h3 className='single-pro'>HENNA POWDER</h3>
+                                <h4><b>PRICE $ 50</b></h4>
+                                <div className='cart-col-3 d-flex   gap-15  w-100'>
+                                    <div className='single-pro input'>
+                                        <input className="form-control" type="number" name="" min={1} max={10} id="" />
+                                    </div>
+                                    <div className='singlrpro-card'> <Link to="/Cart" className='btn text-white fw-bold cardbtn'>
+                                        Add to card
+                                    </Link></div>
+                                </div>
+                                <ul className='singpro-ul'>
+                                    <li>Made from Organic fruit for black stain.</li>
+                                    <li>Lab tested natural formula approved by Dubai Authorities.</li>
+                                    <li>fresh, and safe.</li>
+                                </ul>
+                                <img src={Sngprod} class="mb-3" alt="" className="col-9 px-2 my-1" />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -47,8 +65,18 @@ const SingleProduct = () => {
                         <div className="col-12">
                             <h4>Description</h4>
                             <div className='bg-white p-3 rounded'>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod corrupti vero, minus asperiores consequuntur, saepe reprehenderit rerum unde architecto iure dicta consequatur repellat odit libero adipisci! Laboriosam obcaecati minima nemo laudantium optio atque? Tempora, debitis! Illum fugiat architecto qui maiores?
+                                <p>Jagua has been used for over 2000 years by native indigenous tribes throughout South America and Panama, as a form of temporary all-natural body art. Many indigenous tribes in South America use jagua body art as a part of ceremony and celebrations.
+
+                                    We are the primary supplier in the Middle East and South Asia region to source top quality all natural Jagua Juice from the local indigenous tribes in the Amazon forest. The product is of superior quality and it is the result of in-depth research and testing which has now resulted into an undiluted formula for temporary tattoos.
                                 </p>
+                                <h5>Why Buy Jagua Gel From Us</h5>
+                                <ul>
+                                    <li>Primary supplier of Jagua Tattoo Gel in the Middle East and South Asia.</li>
+                                    <li>Lab tested natural formula approved by Dubai authorities.</li>
+                                    <li>We source our 100% purest quality of USDA certified essential oils from the supplier in the USA who is ranked in the Top 5 list of global suppliers of Essential oils.</li>
+                                    <li>100% natural, fresh, and safe.</li>
+                                    <li>Same Jagua Tattoo Gel is used for our clients.</li>
+                                </ul>
                             </div>
                         </div>
                     </div>

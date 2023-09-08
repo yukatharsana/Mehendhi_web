@@ -16,23 +16,23 @@ const Shophenna = () => {
                     <div className="row">
                         <div className="col-3">
                             <div className="filter-card mb-3">
-                                <h3 className="filter-title">Shop by categories</h3>
+                                <h3 className="filter-title">SHOP BY CATEGORIES</h3>
                                 <div>
                                     <ul className='ps-0'>
-                                        <li>Henna kits</li>
-                                        <li>henna</li>
-                                        <li>nail henna</li>
-                                        <li>Henna hair color</li>
-                                        <li>Henna Acceseries</li>
-                                        <li>After care</li>
+                                        <li>HENNA HITS</li>
+                                        <li>HENNA</li>
+                                        <li>NAIL HENNA</li>
+                                        <li>HENNA HAIR COLOR</li>
+                                        <li>HENNA ACCESERIES</li>
+                                        <li></li>
 
                                     </ul>
                                 </div>
                             </div>
                             <div className="filter-card mb-3">
-                                <h3 className="filter-title">Filter by</h3>
+                                <h3 className="filter-title">FILTER BY</h3>
                                 <div>
-                                    <h5 className='sub-title'>Availability</h5>
+                                    <h5 className='sub-title'>AVAILABILITY</h5>
                                     <div className="form-check">
                                         <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
                                         <label className="form-check-label">
@@ -42,7 +42,7 @@ const Shophenna = () => {
                                     <div className="form-check">
                                         <input className="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
                                         <label className="form-check-label">
-                                            Out of stock(0)
+                                            Out Of Stock(0)
                                         </label>
                                     </div>
                                     <h5 className='sub-title'>Price</h5>
@@ -60,23 +60,29 @@ const Shophenna = () => {
                                 </div>
                             </div>
                             <div className="filter-card mb-3">
-                                <h3 className="filter-title">Products</h3>
+                                <h3 className="filter-title">PRODUCTS</h3>
                                 <div>
                                     <div className='product-tags d-flex align-items-center gap-10 flex-wrap'>
                                         <span className='badge bg-light text-secondary rounded-3 py-2 px-3 m-1'>
-                                            henna
+                                            ABHA BLACK HENNA
                                         </span>
                                         <span className='badge bg-light text-secondary rounded-3 py-2 px-3 m-1'>
-                                            nail polish henna
+                                            NAIL HENNA
                                         </span>
                                         <span className='badge bg-light text-secondary rounded-3 py-2 px-3 m-1'>
-                                            henna hone
+                                            HENNA BIG CONES
                                         </span>
                                         <span className='badge bg-light text-secondary rounded-3 py-2 px-3 m-1'>
-                                            henna
+                                            ESSENTION OIL
+                                        </span>
+                                        <span className='badge bg-light text-secondary rounded-3 py-2 px-3 m-1'>
+                                            HENNA POWDER 
+                                        </span>
+                                        <span className='badge bg-light text-secondary rounded-3 py-2 px-3 m-1'>
+                                            HAIR DARKENING HENNA
                                         </span>
                                         <span className='badge bg-light text-secondary rounded-3 py-2 px-3'>
-                                            henna
+                                            
                                         </span>
                                     </div>
                                 </div>
@@ -111,7 +117,7 @@ const Shophenna = () => {
                                 </div>
                             </div>
                             <div className='products-list py-5 mb-5 container w-100'>
-                                <div className='w-100 d-flex flex-lg-wrap gap-4'>
+                                <div className='w-100 d-flex flex-lg-wrap gap-'>
                                     <ProductCard grid={grid} />
                                     <ProductCard grid={grid} />
                                     <ProductCard grid={grid} />
